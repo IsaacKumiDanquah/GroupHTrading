@@ -1,0 +1,425 @@
+@import "fontawesome.scss";
+@import "solid.scss";
+@import "brands.scss";
+@import "regular.scss";
+@import "v4-shims.scss";
+
+:root {
+  --pageColor:rgb(9, 185, 239);
+  --fontfamily: Arial, Helvetica, sans-serif;
+  --textColor: rgb(247, 235, 235);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  margin-right: 1em;
+  background-color: var(--pageColor);
+  font-family: var(--fontfamily);
+  color: var(--textColor);
+
+  display: flex;
+  justify-content: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+
+
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+
+.titleWrapper{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+      background-color: rgb(2, 7, 11);
+     display: flex;
+     .col1{
+   margin-left: 1em;
+      max-width: 5em;
+      max-height: 5em;
+      align-self: flex-start;
+      img{
+      overflow: hidden;
+          width:100%;
+          height: 100%;
+          object-fit: contain;
+      }
+  }
+      .title{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: 100%;
+          .col2{
+          width: 100%;
+           width: fit-content;
+            
+              text-align: center;
+              flex-wrap: wrap;
+             align-self: center;
+  
+  
+             .groupG {
+                 font-size: 12pt;
+                 font-weight: bolder;
+              color: whitesmoke;
+            }
+            .etrep {
+              font-size: 12pt;
+              font-weight: bolder;
+              color: #3cb7f4;
+            }
+          }
+  
+      }
+  }
+  
+  
+  
+  
+  @media (min-width: 700px) {
+      .titleWrapper{
+          background-color: rgb(2, 7, 11);
+         display: flex;
+         .col1{
+      
+          max-width: 10em;
+          max-height: 10em;
+          img{
+          overflow: hidden;
+              width:100%;
+              height: 100%;
+              object-fit: contain;
+          }
+      }
+          .title{
+        
+              .col2{
+                 .groupG {
+                     font-size: 24pt;
+                     font-weight: bolder;
+              
+                }
+                .etrep {
+                  font-size: 24pt;
+                  font-weight: bolder;
+                
+                }
+              }
+      
+          }
+      }
+  
+  }
+
+.firstWrapper{
+    background-color:rgb(20, 7, 7);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20% 20% 20% 15%;
+
+    min-width: 20em;
+ 
+   
+
+    .card{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10%;
+        background-color: black;
+    
+
+    }
+
+}
+
+
+@media (min-width: 700px) {
+    .firstWrapper{
+     
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10% 40% 40% 30%;
+        min-width: 40em;
+    
+        .card{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 10%;
+            background-color: black;
+        
+    
+        }
+    
+    }
+}
+
+
+.container{
+border: 3px solid blue;
+   // position: relative;
+    
+      background-color: rgb(74, 3, 173);
+     // margin: 2em 2em;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    
+      .coloDiv{
+    
+      
+        background-color: #02000d;
+      }
+    
+    
+      .formImput1{
+      //  margin: 2px 0em 0em;
+        background-color: #02000d;
+      }
+    
+      .payMomo{
+        text-align: center;
+        width: 100%;
+        background-color:transparent;
+     
+        font-size: 12pt;
+        font-weight: 700;
+       // align-self: flex-start;
+    
+    
+      }
+    
+      img{
+    
+        background-color: #070230;
+        width: 100px;
+        height: 100px;
+        //overflow: hidden;
+      }
+    
+      .paytext{
+        text-align: center;
+        background-color: rgb(100, 16, 225);
+       
+      }
+    
+      .textInput{
+      //  margin: 2px 1em;
+        color: rgb(14, 1, 1);
+        background-color:white;
+    
+      }
+    
+      #momo{
+        height:20px; width:20px;
+      }
+    
+      .btnSubmitMomo{
+        align-self: center;
+        font-style: italic;
+        color: white;
+        background-color: #1e0ad1;
+       // width: 50%;
+       // height: 2em;
+       // margin: 2px 1em;
+    
+        &:hover{
+         
+          background-color: red;
+        }
+      }
+    
+    }
+    
+    .payWithcardWrapper{
+        max-width: 13em;
+        overflow: hidden;
+        border: 2px solid black;
+      background-color: rgb(3, 19, 8);
+     // position: relative;
+     // margin: 2em 2em;
+      //display: flex;
+     // flex-direction: column;
+     // align-content: center;
+     // align-items: center;
+    
+      .comboWrapper{
+          margin: 0;
+       // display: flex;
+       // padding: 2px;
+        background-color: white;
+    
+    
+        #theinput{
+            width: 100%;
+            padding: 1px;
+            color: rgb(14, 1, 1);
+            background-color:white;
+
+            font-weight: 700;
+          
+        }
+    
+        select{
+            width: 100%;
+            padding: 0;
+            color: rgb(14, 1, 1);
+            background-color:white;
+          
+            font-weight: 700;
+        }
+      }
+    
+      .colorCreditcard{
+       // margin: 0 0 1 1;
+        background-color:rgb(10, 10, 2);
+    
+        .imgcard{
+          width: 50px;
+          height: 50px;
+    
+        }
+    
+        .chooseCard{
+          display: block;
+          max-width: 100px;
+    
+        }
+    
+    .paytextCard{
+      background-color:transparent;
+      font-weight: 700;
+    
+    }
+      }
+    
+      .dateWrapper{
+        display:block;
+
+        .cardnum{
+            width: 100%;
+            color: black;
+            font-weight: 700;
+            background-color: white;
+        }
+        
+    .datep{
+        color: rgb(14, 1, 1);
+        background-color:white;
+        border: 1px solid black;
+        font-weight: 700;
+    }
+    
+    
+      
+        #cvvid{
+      
+          color: #3c15da;
+          color: rgb(14, 1, 1);
+          background-color:white;
+          border: 0px solid blue;
+          font-weight: 700;
+
+              }
+    
+              .btnSubmitCard{
+                  margin-bottom: 0;
+                  align-self: center;
+                  font-style: italic;
+                  color: white;
+                  background-color: #1e0ad1;
+                
+            
+               
+              
+                  &:hover{
+                   
+                    background-color: red;
+                  
+                }
+    
+              }
+    
+      }
+    
+    
+    
+    
+    }
+
+
+    
+.payMomo{
+
+    color: transparent;
+    animation: effect 1s linear infinite;
+    }
+    
+    @keyframes effect {
+      0% {
+          background: linear-gradient(
+                  #98f406, yellow);
+          -webkit-background-clip: text;
+         
+      }
+    
+      100% {
+          background: linear-gradient(
+                  #3CE7D7, #000FFF);
+          -webkit-background-clip: text;
+      }
+    }
+  
+  
+  
+    .paytextCard{
+  
+      color: transparent;
+      animation: effect 1s linear infinite;
+      }
+      
+      @keyframes effect {
+        0% {
+            background: linear-gradient(
+                    #98f406, yellow);
+            -webkit-background-clip: text;
+           
+        }
+      
+        100% {
+            background: linear-gradient(
+                    #3CE7D7, #000FFF);
+            -webkit-background-clip: text;
+        }
+      }
+

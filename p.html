@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page Group B</title>
+    
+        <script src="payment.js"></script>
+        <script src="jquery.js"></script>
+    
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="dist/p.css" />
+      </head>
+<body>
+    <div class="titleWrapper">
+        <div class="col1">
+            <img src="gbl.PNG" alt="" />
+        </div>
+  
+        <div class="title">
+          <div class="col2">
+            <span class="groupG">GROUP B &nbsp;</span>
+            <span class="etrep"> TRADING ENTREPRISE </span> <br />
+            <marquee
+              scrollamount="10"
+              width="50%"
+              behavior="SCROLL"
+              direction="right"
+            >
+              Dealers in All Kinds Of Electronic Devices
+            </marquee>
+          </div>
+        </div>
+      </div>
+    <div class="firstWrapper"> 
+        <div class="card">
+            <div class="wrapper">
+                <div class="container">
+                    <h5 class="paytext">PAYMENT DETAILS</h5>
+                    <hr />
+            
+                    <div class="coloDiv">
+                      <span class="payMomo"> Pay with mobile money </span>
+                      <br />
+                      <img src="image/cards/mtncardphon.png" alt="" />
+                      <form class="formImput1" action="">
+                        <input id="momo" name="momo" type="radio" />
+                        <label for="momo">MTN Mobile Money</label> <br />
+                        <input id="momo" name="momo" type="radio" />
+                        <label for="momo">Vodafone Cash</label> <br />
+                        <input id="momo" name="momo" type="radio" />
+                        <label for="momo">Tigo Cash</label> <br />
+            
+                        <input class="textInput" placeholder="Mobile Number" type="text" />
+                        <br />
+                        <input class="textInput" placeholder="Enter PIN" type="text" />
+                        <br />
+                      
+                        <button class="btnSubmitMomo">Submit</button>
+                      </form>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="payWithcardWrapper">
+                      <div class="colorCreditcard">
+                        <h5 class="paytextCard">Pay with Card</h5>
+            
+                        <img class="imgcard" src="image/cards/card.png" alt="" />
+                        <img class="imgcard" src="image/cards/visa.png" alt="" />
+                        <img class="imgcard" src="image/cards/master.png" alt="" />
+                        <span class="chooseCard"> Choose Card</span>
+                      </div>
+            
+                      <div class="comboWrapper">
+                        <div class="divWrapper"></div>
+                        <input type="text" id="theinput" name="theinput" readonly />
+                        <select
+                          name="thelist"
+                          onChange="combo(this, 'theinput')"
+                          onMouseOut="comboInit(this, 'theinput')"
+                        >
+                          <option>Visa</option>
+                          <option>Master Card</option>
+                          <option>Apex Link</option>
+                        </select>
+                      </div>
+            
+                      <div class="dateWrapper">
+                        <input placeholder="Card Number" class="cardnum" type="text" />
+            
+                        <input class="datep" type="month" value="2020-2025" />
+                        <input placeholder="Cvv" id="cvvid" type="text" />
+                        <br />
+                        <button class="btnSubmitCard">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    
+  
+    </div>
+    
+</body>
+</html>

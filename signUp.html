@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewpoint" content="width=device-width, initial-scale-1.0">
+<head>
+	<title>Login Form Design</title>
+	
+		<style type="text/css">
+
+			.f1{
+				color: black;
+				background-color: white;
+				font-weight: 700;
+			}
+
+			.logo{
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 5em;
+				height: 5em;
+			}
+
+			@media (min-width: 10px) {
+				.logo{
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 3em;
+				height: 3em;
+			}
+
+			}
+
+			
+			@media (min-width: 700px) {
+				.logo{
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 5em;
+				height: 5em;
+			}
+
+			}
+
+
+			.pageHeader{ 
+						height:90vh;
+						border:1px;	
+						background-image: linear-gradient(  rgba(0,0,0,.65), rgb(3, 3, 17)), url("image/background/prisbac.jpg");
+						background-size: cover;
+						background-position:center;
+						background-repeat: no-repeat;
+						color:seashell;
+						}
+
+						.h1Wrapper{
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+    
+				.h1Wrapper .sign{
+				   display: flex;
+				   font-family: sans-serif;
+				   font-size: 1em;
+				   color: white;
+				   border: 3px ridge lightblue;
+				   width: 5em;
+				   justify-content: center;
+				   text-align: center;
+				   background-color: teal;
+				   border-radius: 15px;
+				 
+			   }
+			
+
+			body{
+
+				margin:center;
+				text-align: center;
+				align-content: center;
+				font-size: 1.2rem;
+				font-family: serif;
+				font-style: italic;
+				font-weight:  bolder;
+
+			}
+
+			
+		</style>
+
+
+	
+</head>
+<body>
+	<header class="pageHeader">
+	
+	    <img class="logo" src="image/LogoProDesign1.svg" alt="" />
+	
+
+	<div class="h1Wrapper">
+		<h1 class="sign">Sign Up</h1>
+	</div>
+	
+
+	<div >
+	<form style="align-content: center; margin: auto; text-align: center; ">
+			User Name:<br>
+			<input class="f1" type="" name="" required="" size="40"  placeholder="User name">
+			<br><br>
+
+			Email<br>
+			<input class="f1" type="Email" name="email" required="" size="40" placeholder="email">
+			<br><br>
+
+				Telephone:<br>
+				<input class="f1" type="tel" name="Telephone" maxlength="15"  required size="40" placeholder="Telephone"><br>
+				<span >format:0244-333-222</span>
+				<br><br>
+
+				Password:<br>
+				<input class="f1" type="Password" name="Psw" required="" size="40" placeholder="Password">
+				<br><br>
+
+				Confirm Password:<br>
+				<input class="f1" type="Password" name="Confirm" required="" size="40" placeholder="Confirm Password">
+				<br><br>
+
+
+                   <div class="submit_value">
+				<input type="submit" value="Submit" style="color: white; border-radius: 5px; border-width: 5px; border-color: teal; background-color: teal; font-size: 20px;">
+                      </div>
+
+				</header>
+
+			</form>
+		</div>
+
+</body>
+</html>
