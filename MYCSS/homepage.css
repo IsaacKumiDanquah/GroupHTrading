@@ -1,0 +1,38 @@
+
+
+
+
+* {
+    color: white !important;
+    background-color: rgb(41, 1, 1) !important;
+  }
+  
+  .carousel-caption{
+    visibility: hidden;
+  }
+
+
+  #bthome{
+    border: black !important;
+    background-color: rgb(41, 1, 1)!important;
+    color: greenyellow!important;
+  }
+
+  .signup{
+    border: black !important;
+    background-color: rgb(41, 1, 1)!important;
+
+  }
+
+
+  .signup:hover{
+
+    color: greenyellow!important;
+  }
+
+  li:hover{
+    color: greenyellow!important;
+    font-weight: bold;
+
+  }
+  

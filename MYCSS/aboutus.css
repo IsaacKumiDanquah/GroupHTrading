@@ -1,0 +1,28 @@
+
+
+
+
+* {
+    color: white !important;
+    background-color: rgb(41, 1, 1) !important;
+  }
+  
+  .carousel-caption{
+    visibility: hidden;
+  }
+
+
+  body{
+    
+  background-color: var(--pageColor);
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+
+
+  .lcard img:hover {
+    transform: scale(2.1);
+  }
+  
+  

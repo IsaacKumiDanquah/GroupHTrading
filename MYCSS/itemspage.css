@@ -1,0 +1,13 @@
+
+
+
+
+* {
+    color: white !important;
+    background-color: rgb(41, 1, 1) !important;
+  }
+  
+  .carousel-caption{
+    visibility: hidden;
+  }
+  

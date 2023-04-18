@@ -16,5 +16,8 @@ function openLoginSelf() {
 }
 
 function openSignupSelf() {
-  window.open("signUp.html", "_self");
+  window.open("login1.html", "_self");
+}
+function openFeedbackSelf() {
+  window.open("feedback.html", "_self");
 }
